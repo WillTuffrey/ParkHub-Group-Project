@@ -1,4 +1,4 @@
-# TODO: Enter the contributions of each team member
+# Team Member Contributions
 
 ## Will's Contributions
 
