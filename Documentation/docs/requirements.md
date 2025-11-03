@@ -5,13 +5,22 @@
 ### User stories    TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
     Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
 
-
-As a user, they would like to know where the nearest parking is to the location, so that they know before setting off where to go.
-
-As a user, they would like to know what the best-priced parking is around the location, so that they know before setting off, the best parking for them.
+1. As a user, they would like to know where the nearest parking is to the location, so that they know before setting off where to go.
+2. As a user, they would like to know what the best-priced parking is available around the location, so that they can plan and choose the best parking for their needs.
+3. As a user, they would want to see available parking spots in real time so they can find a space quickly.
+4. As a user, they would want to reserve a parking spot ahead of time to avoid wasting time searching.
+5. As a user, they would want to pay for parking online to speed up their exit from the lot.
+6. As a user, they would want to receive a digital receipt as proof of payment.
+7. As a user, they would want to get notified before their parking expires, so they can extend their time or move their car.
 
 
 ### Actors          TODO: List and describe the actors/users for this product.
+
+1. Regular day Drivers - Because they need to know how to get to the destination with the right conditions that the user is looking for, such as price, space, security cameras, etc. 
+2. Administrator - Person responsible for managing the parking system and its data.
+3. Payment Gateway - An External system for processing digital transactions.
+4. Sensor - Hardware that detects vehicle presence and sends data to the system.
+5. Government Authority - An organisation that oversees the management, compliance, and regulation of public parking facilities.
 
 
 

@@ -1,3 +1,9 @@
 # TODO: Enter the contributions of each team member
 
-1. TEAM MEMBER CONTRIBUTION
+## Will's Contributions
+
+Problem statement revamp
+
+## Ahmed's Contributions
+
+Updated User stories and Actors
