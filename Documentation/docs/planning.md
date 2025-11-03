@@ -4,7 +4,7 @@
 
 ### Problem statement   (TODO: Replace the example text like this with text that describes your project. What is the problem to be addressed?)
 Finding the right car park can be difficult, and other map and route planning apps can be unreliable. This is mainly due to parking not being a priority for the users or customers of said software, so they don’t implement it. Having a way to filter the conditions for the car park the user is looking for, from price, space and operation hours and other parameters would be a very valuable tool for both regular drivers and people just visiting the city.
-In Bristol, especially around the city centre, parking can be quite hard to come by. This is greatly increased during university term time. The University of the West of England and The University of Bristol combined have around 90,000 students with another estimated 12,000 staff between the 2, so it’s no surprise that during term time, the availability of parking becomes even more scarce.
+In Bristol, especially around the city centre, parking can be quite hard to come by. This is greatly increased during university term time. The University of the West of England and The University of Bristol combined have around 90,000 students with another estimated 12,000 staff between the two, so it’s no surprise that during term time, the availability of parking becomes even more scarce.
 Bristol is also ranked 6th in the UK for population density, and while the city has an excellent public transport system, having access to a car is still very useful. For people who have mobility issues, or who live around the outskirts of the city, having access to an easy-to-use piece of software like this will be game changing.
 
 
@@ -26,7 +26,8 @@ COSTS
 
 
 
-## Project Scope
-TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
+## Project Scope    TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
 
+
+## Context diagram
 ![Insert your Context Diagram Here](images/ContextDiagram.png)
