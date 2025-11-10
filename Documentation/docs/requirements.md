@@ -29,15 +29,19 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
+| USE-CASE UC1 | USE-CASE Describtion | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Goal to be achieved by use case and sources for requirement |
-| **Actors** | TODO: List of actors involved in use case |
-| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
-| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
-| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
-| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
-| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+| **Description** | For the user to find the parking space, find parking details, and pay for the parking space |
+| **Actors** | Drivers, Administration, Payment Gateway |
+| **Assumptions** | There are paid car parks in Bristol </td></tr>
+| **Steps** | The user looks for parking |
+| |User views parking details 
+| |After the user chooses the parking, they need to pay for it |
+| |The payment is processed by the Payment Gateway |
+| |Administrator updates the parking Space|
+| **Variations** | Destination will vary  |
+| **Non-functional** | Parking Details, because the user can’t change the details |
+| **Issues** | N/A|
 
 
 ### Use-Case Diagram (UCD)      TODO: Your Use-Case diagram should include all use-cases.
