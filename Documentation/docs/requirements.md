@@ -40,9 +40,9 @@ TODO: Describe each use case (at least one per team member).
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
 
 
-TODO: Your Use-Case diagram should include all use-cases.
+### Use-Case Diagram (UCD)      TODO: Your Use-Case diagram should include all use-cases.
 
-![Insert your Use-Case Diagram Here](images/use-case.png)
+![Insert your Use-Case Diagram Here](images/use-case-diagram.png)
 
 ## Software Requirements Specification
 ### Functional requirements
