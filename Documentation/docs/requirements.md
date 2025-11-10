@@ -50,6 +50,7 @@ TODO: Describe each use case (at least one per team member).
 | **Actors** | • Drivers (the user) <br> • Sensors |
 | **Assumptions** | That the driver is in Bristol and wants to travel to somewhere in Bristol |
 | **Steps** | • The user makes a search for a car park in the area of their destination <br> • The system sends a request to a server with readings from sensors in the car parks to find car parks with free spaces <br> • The system then receives this result and shows the user some valid options <br> • The user then filters these results to suit their requirements <br> • The user selects a car park <br> • The system sends a request to a map provider server to get the route from the user’s location to the car park <br> • The user sets off |
+| **Variations** | Destination will vary |
 | **Non-functional** | • Easy to use GUI <br> • Intuitive filtering options <br> • A well-integrated maps function |
 | **Issues** | N/A |
 
