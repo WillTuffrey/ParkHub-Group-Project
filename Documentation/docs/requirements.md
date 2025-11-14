@@ -3,7 +3,7 @@
 ## User Needs
 
 ### User stories
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
+    Express these in the form of agile development:- As a (role), I want (goal) so that (benefit).
 
 1. As a user, they would like to know where the nearest parking is to the location, so that they know before setting off where to go.
 2. As a user, they would like to know what the best-priced parking is available around the location, so that they can plan and choose the best parking for their needs.
@@ -36,20 +36,19 @@ TODO: Describe each use case (at least one per team member).
 | **Assumptions** | There are paid car parks in Bristol </td></tr>
 | **Steps** | The user looks for parking |
 | |User views parking details 
-| |After the user chooses the parking, they need to pay for it |
-| |The payment is processed by the Payment Gateway |
-| |Administrator updates the parking Space|
+| |After the user chooses the parking, they can check the pricing of it |
+| |User also checks if there are different types of parking e.g. Blue Badge  |
 | **Variations** | Destination will vary  |
 | **Non-functional** | Parking Details, because the user can’t change the details |
 | **Issues** | N/A|
 
 
-| UC2 | Driver uses the app to travel to a place with no near-by parking | 
+| UC2 | Driver uses the app to travel to a place with no nearby parking | 
 | -------------------------------------- | ------------------- |
-| **Description** | The goal for this use-case is to show the process for the user trying to find some parking for somewhere they want to go, but there is no on-site parking. The app will have to find parking near to the user's destination, then show the user a route from their location or desired starting point, and end at the car park of choice |
+| **Description** | The goal for this use-case is to show the process for the user trying to find some parking for somewhere they want to go, but there is no on-site parking. The app will have to find parking near the user's destination, then show the user a route from their location or desired starting point, and end at the car park of choice |
 | **Actors** | • Drivers (the user) <br> • Sensors |
 | **Assumptions** | That the driver is in Bristol and wants to travel to somewhere in Bristol |
-| **Steps** | • The user makes a search for a car park in the area of their destination <br> • The system sends a request to a server with readings from sensors in the car parks to find car parks with free spaces <br> • The system then receives this result and shows the user some valid options <br> • The user then filters these results to suit their requirements <br> • The user selects a car park <br> • The system sends a request to a map provider server to get the route from the user’s location to the car park <br> • The user sets off |
+| **Steps** | • The user searches a car park in the area of their destination <br> • The system sends a request to a server with readings from sensors in the car parks to find car parks with free spaces <br> • The system then receives this result and shows the user some valid options <br> • The user then filters these results to suit their requirements <br> • The user selects a car park <br> • The system sends a request to a map provider server to get the route from the user’s location to the car park <br> • The user sets off |
 | **Variations** | Destination will vary |
 | **Non-functional** | • Easy to use GUI <br> • Intuitive filtering options <br> • A well-integrated maps function |
 | **Issues** | N/A |
@@ -57,8 +56,10 @@ TODO: Describe each use case (at least one per team member).
 
 
 ### Use-Case Diagram (UCD)      TODO: Your Use-Case diagram should include all use-cases.
+**UML-1**
+![UML-1](https://github.com/user-attachments/assets/7cff83b9-a8f2-4f74-8140-5bfaf3cad7aa)
 
-![Insert your Use-Case Diagram Here](images/use-case-diagram.png)
+**UML-2**
 
 ## Software Requirements Specification
 ### Functional requirements
@@ -73,3 +74,4 @@ TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/IS
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
+
