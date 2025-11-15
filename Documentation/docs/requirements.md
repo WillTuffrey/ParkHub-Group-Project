@@ -32,7 +32,7 @@ TODO: Describe each use case (at least one per team member).
 | USE-CASE UC1 | USE-CASE Describtion | 
 | -------------------------------------- | ------------------- |
 | **Description** | For the user to find the parking space, find parking details, and pay for the parking space |
-| **Actors** | Drivers, Administration, Payment Gateway |
+| **Actors** | Drivers, Administration, Bristol Open Data |
 | **Assumptions** | There are paid car parks in Bristol </td></tr>
 | **Steps** | The user looks for parking |
 | |User views parking details 
