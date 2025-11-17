@@ -31,20 +31,19 @@ TODO: Describe each use case (at least one per team member).
 | USE-CASE UC1 | USE-CASE Describtion | 
 | -------------------------------------- | ------------------- |
 | **Description** | For the user to find the parking space, find parking details, and pay for the parking space |
-| **Actors** | Drivers, Administration, Bristol Open Data |
+| **Actors** | • Drivers <br> • Administration <br> • Bristol Open Data |
 | **Assumptions** | There are paid car parks in Bristol </td></tr>
-| **Steps** | The user looks for parking |
-| |User views parking details 
-| |After the user chooses the parking, they can check the pricing of it |
-| |User also checks if there are different types of parking e.g. Blue Badge  |
+| **Steps** | • The user looks for parking <br> • User views parking details <br> • After the user chooses the parking, they can check the pricing of it <br> • User also checks if there are different types of parking e.g. Blue Badge |
 | **Variations** | Destination will vary  |
 | **Non-functional** | Parking Details, because the user can’t change the details |
 | **Issues** | N/A|
 
+**UML-1**
+![UML-1](https://github.com/user-attachments/assets/7cff83b9-a8f2-4f74-8140-5bfaf3cad7aa)
 
-| UC2 | Driver uses the app to travel to a place with no nearby parking | 
+| USE-CASE UC2 | USE-CASE Description | 
 | -------------------------------------- | ------------------- |
-| **Description** | The goal for this use-case is to show the process for the user trying to find some parking for somewhere they want to go, but there is no on-site parking. The app will have to find parking near the user's destination, then show the user a route from their location or desired starting point, and end at the car park of choice |
+| **Description** | Driver uses the app to travel to a place with no nearby parking: the goal for this use-case is to show the process for the user trying to find some parking for somewhere they want to go, but there is no on-site parking. The app will have to find parking near the user's destination, then show the user a route from their location or desired starting point, and end at the car park of choice |
 | **Actors** | • Drivers (the user) <br> • Sensors |
 | **Assumptions** | That the driver is in Bristol and wants to travel to somewhere in Bristol |
 | **Steps** | • The user searches a car park in the area of their destination <br> • The system sends a request to a server with readings from sensors in the car parks to find car parks with free spaces <br> • The system then receives this result and shows the user some valid options <br> • The user then filters these results to suit their requirements <br> • The user selects a car park <br> • The system sends a request to a map provider server to get the route from the user’s location to the car park <br> • The user sets off |
@@ -52,13 +51,29 @@ TODO: Describe each use case (at least one per team member).
 | **Non-functional** | • Easy to use GUI <br> • Intuitive filtering options <br> • A well-integrated maps function |
 | **Issues** | N/A |
 
+**UML-2**
+
+
+| USE-CASE UC3 | USE-CASE Description |
+| -------------------------------------- | ------------------- |
+| **Description** | The user finds an issue with the webapp, and wishes to report it |
+| **Actors** | • Drivers (the user) <br> • Administration |
+| **Assumptions** | There will be server space to store remaining feedback |
+| **Steps** | • The user submits feedback via a form on the webapp with the details of the problem they found/encountered <br> • Feedback is then stored so the administrator can deal with it <br> • The administrator then takes the feedback, and acts on it. For example, the user could have found a bug with how the map is displayed, and the administrator would then work to solve that issue |
+| **Variations** | The feedback could be submitted via email or other contact rather than on the feedback form |
+| **Non-functional** | There needs to be an easy process for the user to access and submit feedback and report problems to the administrator |
+| **Issues** | There would either need to be a way to notify the administrator of new feedback, or the administrator would have to regularly check for new feedback manually |
+
+**UML-3**
 
 
 ### Use-Case Diagram (UCD)      TODO: Your Use-Case diagram should include all use-cases.
-**UML-1**
-![UML-1](https://github.com/user-attachments/assets/7cff83b9-a8f2-4f74-8140-5bfaf3cad7aa)
 
-**UML-2**
+
+
+
+
+
 
 ## Software Requirements Specification
 ### Functional requirements
@@ -73,4 +88,3 @@ TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/IS
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
-
