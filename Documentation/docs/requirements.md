@@ -18,9 +18,8 @@
 
 1. Regular day Drivers - Because they need to know how to get to the destination with the right conditions that the user is looking for, such as price, space, security cameras, etc. 
 2. Administrator - Person responsible for managing the parking system and its data.
-3. Payment Gateway - An External system for processing digital transactions.
-4. Sensor - Hardware that detects vehicle presence and sends data to the system.
-5. Government Authority - An organisation that oversees the management, compliance, and regulation of public parking facilities.
+3. Sensor - Hardware that detects vehicle presence and sends data to the system.
+4. Government Authority - An organisation that oversees the management, compliance, and regulation of public parking facilities.
 
 
 
