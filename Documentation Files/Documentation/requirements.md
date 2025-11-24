@@ -3,7 +3,6 @@
 ## User Needs
 
 ### User stories
-    Express these in the form of agile development:- As a (role), I want (goal) so that (benefit).
 
 1. As a user, they would like to know where the nearest parking is to the location, so that they know before setting off where to go.
 2. As a user, they would like to know what the best-priced parking is available around the location, so that they can plan and choose the best parking for their needs.
@@ -51,7 +50,7 @@ TODO: Describe each use case (at least one per team member).
 | **Non-functional** | • Easy to use GUI <br> • Intuitive filtering options <br> • A well-integrated maps function |
 | **Issues** | N/A |
 
-**UML-2**
+**UML-**
 
 
 | USE-CASE UC3 | USE-CASE Description |
@@ -64,12 +63,8 @@ TODO: Describe each use case (at least one per team member).
 | **Non-functional** | There needs to be an easy process for the user to access and submit feedback and report problems to the administrator |
 | **Issues** | There would either need to be a way to notify the administrator of new feedback, or the administrator would have to regularly check for new feedback manually |
 
-**UML-3**
-
-
-### Use-Case Diagram (UCD)      TODO: Your Use-Case diagram should include all use-cases.
-
-
+**UML-2**
+![UML-2](images/Use-case-disgram-2.png)
 
 
 
@@ -81,6 +76,12 @@ TODO: create a list of functional requirements.
     e.g. "The system shall ..."
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
+
+* FR1: Display filters for the user to select or deselect - from use-case 1
+* FR2: Use the filters to find and show (a) car park(s) matching all requirements - from use-case 1
+* FR3: Use an algorithm to calculate the closest car park to the location selected - from use-case 1
+* FR4: Have a feedback ticket system to allow users to report issues with the program or data - from use-case 2
+* FR5: Integrate a map system like Google Maps to display locations for the user to see
 
 
 ### Non-Functional Requirements
