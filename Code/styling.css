@@ -82,6 +82,12 @@ a.class2:active {text-decoration: none; color: #ffff00;}
 }
 .dropdownButton:hover {
     /* fade to a different image - for example X => = image */
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0%;
+    max-height: 95px;
+    left: 0;
+    top: 0;
 }
 
 .sticky {position: sticky; top: 0;}
