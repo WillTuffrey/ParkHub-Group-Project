@@ -3,17 +3,16 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: blue;
-    color: #ffff00;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
     top: 0;
     left: 0;
-    padding: 20px;
+    margin: 0%;    
     font-size: 1.875rem;
     text-align: center;
 }
 body {
     margin: 0;
-    min-height: 100vh;
     background-attachment: fixed;
 }
 footer {    
@@ -22,7 +21,6 @@ footer {
     left: 0;
     padding: 10px;
     text-align: center;
-    /* font-size: 1rem; */
 }
 .footer {
     color: rgb(255, 255, 255);
@@ -46,8 +44,7 @@ p {
 h1 {
     font-size: 1.875rem;
     text-align: left;
-    column-span: all;    
-    padding: 1%;
+    column-span: all;
     margin: 1%;
 }
 h2 {
@@ -57,17 +54,9 @@ h2 {
     padding: 1%;
     margin: 1%;
 }
-
-
-
-
-
-
-
 div {
     text-align: center;
-    column-count: 3;
-    column-gap: 40px;    
+    padding: 1%;
     margin: 0%;
 }
 /* Classes */
@@ -82,6 +71,18 @@ a.class2:link  {text-decoration: none; color: rgb(79, 111, 255);}
 a.class2:visited {text-decoration: none; color: rgb(79, 111, 255);}
 a.class2:hover {text-decoration: underline; color: #ffff00;}
 a.class2:active {text-decoration: none; color: #ffff00;}
+
+.dropdownButton {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0%;
+    max-height: 95px;
+    left: 0;
+    top: 0;
+}
+.dropdownButton:hover {
+    /* fade to a different image - for example X => = image */
+}
 
 .sticky {position: sticky; top: 0;}
 .centreText {text-align: center;}
