@@ -1,8 +1,7 @@
 # Design
 
 ## User Interface design
-TODO: Specify and develop a user interface mockup using a wireframe.
-Here is the GUI mock up in the form of a wireframe diagram.
+Here is the GUI mock-up in the form of a wireframe diagram. This diagram shows the navigation of the website and how it's going to flow when it's operational. As well as the explanation of the wireframe. 
 
 ![Insert your wireframe/wireflow here](images/Design.png)
 ![Insert your wireframe/wireflow here](images/Website-Details.png)
