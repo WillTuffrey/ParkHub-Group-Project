@@ -88,4 +88,11 @@ TODO: create a list of functional requirements.
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
+* NFR1: It will show up to 5 different car parks near the user on one page. (usability)
+* NFR2: The website should work on a phone in both Android and IOS. (Portability)
+* NFR3: It will assume the default on the browser if there's no user geolocation. (reliability)
+* NFR4: On the map, it will have a radius that'll show car parks around the user. (usability)
+
+
+
 Indicate which UC the requirement comes from.
