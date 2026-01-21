@@ -91,6 +91,6 @@ a.class2:active {text-decoration: none; color: #ffff00;}
 }
 
 .sticky {position: sticky; top: 0;}
-.centreText {text-align: center;}
+.centredText {text-align: center;}
 .leftText {text-align: left;}
 .rightText {text-align: right;}
