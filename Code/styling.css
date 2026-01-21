@@ -13,6 +13,10 @@ header {
 }
 body {
     margin: 0;
+    
+    /* sort flexboxes */
+    flex-direction: row;
+    
     background-attachment: fixed;
 }
 footer {    
@@ -60,17 +64,17 @@ div {
     margin: 0%;
 }
 /* Classes */
-a.class1 {color:#ffffff;}
-a.class1:link  {text-decoration: none; color: #ffffff;}
-a.class1:visited {text-decoration: none; color: #ffffff;}
-a.class1:hover {text-decoration: underline; color: #ffff00;}
-a.class1:active {text-decoration: none; color: #ffff00;}
+a.link1 {color:#ffffff;}
+a.link1:link  {text-decoration: none; color: #ffffff;}
+a.link1:visited {text-decoration: none; color: #ffffff;}
+a.link1:hover {text-decoration: underline; color: #ffff00;}
+a.link1:active {text-decoration: none; color: #ffff00;}
 
-a.class2 {color: rgb(79, 111, 255);}
-a.class2:link  {text-decoration: none; color: rgb(79, 111, 255);}
-a.class2:visited {text-decoration: none; color: rgb(79, 111, 255);}
-a.class2:hover {text-decoration: underline; color: #ffff00;}
-a.class2:active {text-decoration: none; color: #ffff00;}
+a.link2 {color: rgb(79, 111, 255);}
+a.link2:link  {text-decoration: none; color: rgb(79, 111, 255);}
+a.link2:visited {text-decoration: none; color: rgb(79, 111, 255);}
+a.link2:hover {text-decoration: underline; color: #ffff00;}
+a.link2:active {text-decoration: none; color: #ffff00;}
 
 .dropdownButton {
     background-color: transparent;
@@ -81,7 +85,7 @@ a.class2:active {text-decoration: none; color: #ffff00;}
     top: 0;
 }
 .dropdownButton:hover {
-    /* fade to a different image - for example X => = image */
+    /* fade to a different image - for example 'X' => '=' image */
     background-color: transparent;
     border-color: transparent;
     margin: 0%;
@@ -94,3 +98,36 @@ a.class2:active {text-decoration: none; color: #ffff00;}
 .centredText {text-align: center;}
 .leftText {text-align: left;}
 .rightText {text-align: right;}
+.mainContent {min-height:auto;} /* fix to make mainContent be at minimum the height of the screen */
+
+
+
+ul {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+    border-right:1px solid #bbbbbb;
+}
+ul li:last-child {
+    border-right: none;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 70px;
+}
+ul li a:hover:not(.active) {
+    background-color: #111111;
+}
+ul li a.active {
+    background-color: green;
+}

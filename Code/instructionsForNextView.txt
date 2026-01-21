@@ -1,0 +1,2 @@
+Make dropdown verticle instead of horrizontal
+Add an invisible property for when button is pressed

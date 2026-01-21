@@ -1,0 +1,43 @@
+CSS:
+
+ul {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+    border-right:1px solid #bbbbbb;
+}
+ul li:last-child {
+    border-right: none;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li a:hover:not(.active) {
+    background-color: #111111;
+}
+ul li a.active {
+    background-color: green;
+}
+
+
+
+HTML:
+
+<header class="sticky">
+            <h1>About me</h1>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a class="active" href="aboutme.html">About me</a></li>
+                <li><a href="gallery.html">Gallary</a></li>
+            </ul>
+        </header>   
