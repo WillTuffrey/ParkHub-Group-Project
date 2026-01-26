@@ -196,3 +196,17 @@ ul li a:hover:not(.active) {
 ul li a.active {
     background-color: green;
 }
+
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 0.3;
+  background: #919191;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
