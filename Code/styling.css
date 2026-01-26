@@ -12,17 +12,17 @@ header {
     text-align: center;
 }
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     margin: 0;
-    
-    /* sort flexboxes */
-    flex-direction: row;
-    
+    min-height: 100vh;    
     background-attachment: fixed;
 }
 footer {    
     background-color: rgb(39, 39, 39);
     bottom: 0;
     left: 0;
+    width: 100%;
     padding: 10px;
     text-align: center;
 }
@@ -76,6 +76,72 @@ a.link2:visited {text-decoration: none; color: rgb(79, 111, 255);}
 a.link2:hover {text-decoration: underline; color: #ffff00;}
 a.link2:active {text-decoration: none; color: #ffff00;}
 
+
+
+
+
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 9px 16px;
+    font-size: 1.875rem;
+    border: none;
+    cursor: pointer;
+    left: 0;
+}
+
+.dropdown {
+    position: relative;
+    left: 0;
+}
+
+.dropdown-content {    
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content a:active {
+    background-color: rgb(79, 111, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(79, 111, 255); 
+}
+
+.dropdown-text::after {
+    content: "=";
+    font-size: 1.875rem;
+    padding: 9px;
+}
+
+.dropdown:hover .dropdown-text::after {
+    content: "X";
+    font-size: 1.875rem;
+    padding: 9px;
+}
+
+
+/*
 .dropdownButton {
     background-color: transparent;
     border-color: transparent;
@@ -85,20 +151,19 @@ a.link2:active {text-decoration: none; color: #ffff00;}
     top: 0;
 }
 .dropdownButton:hover {
-    /* fade to a different image - for example 'X' => '=' image */
+    { fade to a different image - for example 'X' => '=' image }
     background-color: transparent;
     border-color: transparent;
     margin: 0%;
     max-height: 95px;
     left: 0;
     top: 0;
-}
+}       */
 
 .sticky {position: sticky; top: 0;}
 .centredText {text-align: center;}
 .leftText {text-align: left;}
 .rightText {text-align: right;}
-.mainContent {min-height:auto;} /* fix to make mainContent be at minimum the height of the screen */
 
 
 
