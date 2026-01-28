@@ -41,3 +41,28 @@ HTML:
                 <li><a href="gallery.html">Gallary</a></li>
             </ul>
         </header>   
+
+
+
+
+
+.homeslider {
+  width: 950px;
+  height: 400px;
+  padding-left: 25px;
+  animation-name: homepics;
+  animation-duration: 100s;
+}
+
+@keyframes homepics {
+  0% { background-image: url('images/pic1.png'); }
+  10% { background-image: url('images/pic2.png'); }
+  20% { background-image: url('images/pic3.png'); }
+  30% { background-image: url('images/pic4.png'); }
+  40% { background-image: url('images/pic5.png'); }
+  50% { background-image: url('images/pic6.png'); }
+  80% { background-image: url('images/pic7.png'); }
+  90% { background-image: url('images/pic8.png'); }
+}
+
+// can be done the same with background colours for buttons, change background-image with background-color and choose the colour
