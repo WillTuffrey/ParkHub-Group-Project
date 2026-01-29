@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="mainPageStyling.css">
+    <link rel="stylesheet" href="menuStyling.css">    
     <head>
         <script src="scripts.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ParkHub - Home</title>
         <header class="sticky">
-            <section>
-                <div class="dropdown">
-                    <button class="dropbtn">=</button>
-                    <div class="dropdown-content">
-                    <a class="active">Home</a>
-                    <a href="#">Plan</a>
-                    <a href="#">Explore</a>
-                    </div>
+            <section class="headerSection">
+                <div>
+                    <button type="button", onclick='toggleDropdown()' class="dropdownButton"><img class="dropdownMenuImage", src="images/mainMenuPassive.png", alt="Dropdown Button"></button>
                 </div>
-                <article>
+                
+                <article class="headerArticle">
                     <h1>Parkhub  —  Home</h1>
                 </article>                                             
             </section>    
@@ -57,7 +54,7 @@
             </article>
             <article>
                 <h2>Contact</h2>
-                <p><a href="feedback.html" class="link2" title="blank link">Send feedback</a></p> <!-- This link actually connects -->
+                <p><a href="feedback.html" class="link2" title="blank link">Send feedback</a></p>
                 <p><a href="" class="link2" title="blank link">Contact via some way</a></p>
                 <p><a href="" class="link2" title="blank link">Some other options</a></p>                                
             </article>

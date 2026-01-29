@@ -1,4 +1,1 @@
 Add an invisible property for when button is pressed
-Style sheets:
-* Make a few different style sheets to split up the styles and make it easier to read
-* Make ones which are page specific - for example styles for radio buttons and tick boxes which wouldn't be needed for the home page

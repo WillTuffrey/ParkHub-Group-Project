@@ -1,1 +1,100 @@
 /* General styling for all pages */
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    max-height: 84px;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 17px;
+    font-size: 1.875rem;
+    text-align: center;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    min-height: 100vh;    
+    background-attachment: fixed;
+}
+footer {    
+    background-color: rgb(39, 39, 39);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.footer {
+    color: rgb(255, 255, 255);
+}
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+section.headerSection{
+    height: 50px;
+    width: 100%;
+}
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;    
+}
+article.headerArticle {
+    padding: 8px 16px;
+}
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 0.3;
+    background: #919191;
+    padding: 20px;
+}
+div {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 1%; /* Check padding and margin for compatibility */
+    margin: 1%;
+}
+h1 {
+    font-size: 1.875rem;
+    text-align: left;
+    column-span: all;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    column-span: all;
+    padding: 1%; /* Check padding and margin for compatibility */
+    margin: 1%;
+}
+
+.sticky {position: sticky; top: 0;}
+.centredText {text-align: center;}
+.leftText {text-align: left;}
+.rightText {text-align: right;}
+
+a.link1 {color:#ffffff;}
+a.link1:link  {text-decoration: none; color: #ffffff;}
+a.link1:visited {text-decoration: none; color: #ffffff;}
+a.link1:hover {text-decoration: underline; color: #ffff00;}
+a.link1:active {text-decoration: none; color: #ffff00;}
+
+a.link2 {color: rgb(79, 111, 255);}
+a.link2:link  {text-decoration: none; color: rgb(79, 111, 255);}
+a.link2:visited {text-decoration: none; color: rgb(79, 111, 255);}
+a.link2:hover {text-decoration: underline; color: #ffff00;}
+a.link2:active {text-decoration: none; color: #ffff00;}
