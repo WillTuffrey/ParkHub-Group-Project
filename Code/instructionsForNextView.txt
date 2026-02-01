@@ -1,4 +1,4 @@
 Add an invisible property for when button is pressed
 Dropdown complete remake:
-* Make the triangle rotate 180 instead of that animation from before
+* Fix animation so it activates on click, and toggles the orientation for when the menu is active
 * Add functionality for onclick method

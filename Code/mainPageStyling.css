@@ -4,7 +4,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    width: 100%;
     max-height: 84px;
     background-color: rgb(39, 39, 39);
     color: rgb(255, 255, 255);
@@ -19,14 +18,13 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    min-height: 100vh;    
+    min-height: 100vh;
     background-attachment: fixed;
 }
 footer {    
     background-color: rgb(39, 39, 39);
     bottom: 0;
     left: 0;
-    width: 100%;
     padding: 10px;
     text-align: center;
 }
@@ -35,11 +33,13 @@ footer {
 }
 section {
     display: -webkit-flex;
-    display: flex;
+    display: flex;    
 }
 section.headerSection{
     height: 50px;
-    width: 100%;
+}
+section.footerSection{
+    padding: 20px;
 }
 article {
     -webkit-flex: 3;
@@ -49,11 +49,15 @@ article {
 article.headerArticle {
     padding: 8px 16px;
 }
+article.footerArticle {
+    padding: 0;
+    margin: 0;
+}
 nav {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 0.3;
-    background: #919191;
+    background: rgb(145, 145, 145);
     padding: 20px;
 }
 div {
@@ -66,6 +70,10 @@ p {
     font-size: 1rem;
     padding: 1%; /* Check padding and margin for compatibility */
     margin: 1%;
+}
+p.noPaddingMargin {
+    padding: 0;
+    margin: 0;
 }
 h1 {
     font-size: 1.875rem;
