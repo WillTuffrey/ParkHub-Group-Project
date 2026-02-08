@@ -1,4 +1,10 @@
 /* Styling for all the menus and buttons */
+button {
+    border: 1px;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
 img.dropdownMenuImage {
     max-width: 30px;
     max-height: 30px;
@@ -142,4 +148,31 @@ ul li a:hover:not(.active) {
 }
 ul li a.active {
     background-color: green;
+}
+
+/* radio buttons */
+/* a.radioButton {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333333; 
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+a.radioButton:active {
+    /* if the default blue is changable, change to the 'page blue' colour
+} */
+::-webkit-slider-runnable-track {
+    height: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button.radioButton {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333333; 
+    border-radius: 1px;
+    position: relative;
 }
