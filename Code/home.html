@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="mainPageStyling.css">
-    <link rel="stylesheet" href="menuStyling.css">    
+    <link rel="stylesheet" href="menuStyling.css">
+    <script src="scripts.js"></script>
     <head>
-        <script src="scripts.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ParkHub - Home</title>
@@ -27,12 +27,19 @@
             <article>
                 <h2>Page title/introdutory</h2>
                 <p>Page content</p>
-                <!-- <p id="demo">Test JavaScript function to change the text.</p>
-                <p><button type="button" onclick='Function1(1)'>Paragraph one</button></p>
-                <p><button type="button" onclick='Function1(2)'>Paragraph two</button></p> -->
             </article>
         </section>
     </body>
+    <table>
+          <thead>
+            <th>Name</th><th>Area Name</th><th>Operator Name</th><th>Spaces</th><th>Operating Times</th>
+          </thead>
+          <tbody id="results">
+          </tbody>
+        </table>
+        <script>
+          query();
+        </script>
     <footer class="footer">
         <section class="footer", class="leftText">
             <article></article>

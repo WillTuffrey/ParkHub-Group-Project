@@ -89,6 +89,20 @@ h2 {
     padding: 1%; /* Check padding and margin for compatibility */
     margin: 1%;
 }
+table {
+    background-color: rgb(187, 187, 187);;
+    border-color: black;
+    border-style: solid;
+}
+thead {
+    background-color: rgb(165, 5, 5);
+}
+tbody {
+    background-color: rgb(255, 255, 255);
+}
+th {
+    max-width: 200px;
+}
 
 .sticky {position: sticky; top: 0;}
 .centredText {text-align: center;}
@@ -106,3 +120,10 @@ a.link2:link  {text-decoration: none; color: rgb(79, 111, 255);}
 a.link2:visited {text-decoration: none; color: rgb(79, 111, 255);}
 a.link2:hover {text-decoration: underline; color: #ffff00;}
 a.link2:active {text-decoration: none; color: #ffff00;}
+
+#map { 
+    position: relative;
+    height: 620px;
+    margin-left:10px; 
+    margin-right: 10px;
+}
