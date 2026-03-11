@@ -65,11 +65,14 @@ div {
     padding: 0;
     margin: 0;
 }
+.div1 {
+    padding: 17px;
+}
 p {
     text-align: left;
     font-size: 1rem;
     padding: 1%; /* Check padding and margin for compatibility */
-    margin: 1%;
+    margin: 0;
 }
 p.noPaddingMargin {
     padding: 0;
@@ -87,7 +90,7 @@ h2 {
     text-align: left;
     column-span: all;
     padding: 1%; /* Check padding and margin for compatibility */
-    margin: 1%;
+    margin: 0;
 }
 table {
     background-color: rgb(187, 187, 187);;
@@ -123,7 +126,9 @@ a.link2:active {text-decoration: none; color: #ffff00;}
 
 #map { 
     position: relative;
-    height: 620px;
-    margin-left:10px; 
-    margin-right: 10px;
+    height: 550px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 15px; 
+    margin-right: 15px;
 }
