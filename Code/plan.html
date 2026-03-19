@@ -30,15 +30,71 @@
     <body>
         <section>
             <nav>
-                <p>Side bit - Contains buttons if required and dropdown/dropside menu</p>
-                <p>Filter/field</p>
-                <div>
-                    <button type="radioButton", class="radioButton" onclick=""></button>
-                </div>
-                <p>Filter/field</p>
-                <div>                    
-                    <button type="radioButton", class="radioButton"></button>
-                </div>
+                <form> <!-- Work out where it goes later -->
+                    <p><b>CCTV</b></p>
+                    <input type="radio" id="" name="" value="">
+                    <label for="">All</label><br>
+                    <input type="radio" id="cctvYes" name="cctv" value="yes">
+                    <label for="cctvYes">Yes</label><br>
+                    <input type="radio" id="cctvNo" name="cctv" value="no">
+                    <label for="cctvNo">No</label><br>
+
+                    <p><b>Spaces</b></p>
+                    <input type="checkbox" id="spaces0-10" name="spaces" value="0-10">
+                    <label for="spaces0-10">{SLIDER FOR SPACES}</label><br>
+
+                    <p><b>Operating times</b></p>
+                    <input type="checkbox" id="24/7" name="operatingTimes" value="24hrs 7 day a week"> <!-- be aware there is a spelling mistake in the data -->
+                    <label for="24/7">24/7</label><br>
+                    <input type="checkbox" id="storeHours" name="operatingTimes" value="Store Hours">
+                    <label for="storeHours">Store Hours</label><br>
+                    <input type="checkbox" id="0700-1900Mon-Fri" name="operatingTimes" value="0700-1900 Mon-Fri">
+                    <label for="0700-1900Mon-Fri">7:00 AM - 7:00 PM, Monday - Friday</label><br>
+                    <input type="checkbox" id="0700-1900Mon-Sat" name="operatingTimes" value="0700-1900 Mon-Sat">
+                    <label for="0700-1900Mon-Sat">7:00 AM - 7:00 PM, Monday - Saturday</label><br>
+                    <input type="checkbox" id="0700-2100Mon-Sat" name="operatingTimes" value="0700-2100 Mon-Sat">
+                    <label for="0700-2100Mon-Sat">7:00 AM - 9:00 PM, Monday - Saturday</label><br>
+
+                    <p><b>Area name</b></p>
+                    <input type="checkbox" id="districtCarParks" name="areaName" value="District Car Parks">
+                    <label for="districtCarParks">District Car Parks</label><br>
+                    <input type="checkbox" id="centralArea" name="areaName" value="Central Area">
+                    <label for="centralArea">Central Area</label><br>
+                    <input type="checkbox" id="broadmead" name="areaName" value="Broadmead">
+                    <label for="broadmead">Broadmead</label><br>
+                    <input type="checkbox" id="bedminster" name="areaName" value="Bedminster">
+                    <label for="bedminster">Bedminster</label><br>
+                    <input type="checkbox" id="harbourside" name="areaName" value="Harbourside">
+                    <label for="harbourside">Harbourside</label><br>
+                    <input type="checkbox" id="docksEstateArea" name="areaName" value="Docks Estate Area">
+                    <label for="docksEstateArea">Docks Estate Area</label><br>
+                    <input type="checkbox" id="brislington" name="areaName" value="Brislington">
+                    <label for="brislington">Brislington</label><br>
+                    <input type="checkbox" id="oldCity" name="areaName" value="Old City">
+                    <label for="oldCity">Old City</label><br>
+                    <input type="checkbox" id="westend" name="areaName" value="Westend">
+                    <label for="westend">Westend</label><br>
+
+                    <p><b>Type of car park</b></p>
+                    <input type="checkbox" id="free" name="typeOfCarPark" value="Free">
+                    <label for="free">Free</label><br>
+                    <input type="checkbox" id="payAndDisplay" name="typeOfCarPark" value="Pay and Display">
+                    <label for="payAndDisplay">Pay and Display</label><br>
+                    <input type="checkbox" id="payOnFoot" name="typeOfCarPark" value="Pay on Foot">
+                    <label for="payOnFoot">Pay on Foot</label><br>
+                    <input type="checkbox" id="freeToShoppers" name="typeOfCarPark" value="Free to Shoppers at adjecent shop">
+                    <label for="freeToShoppers">Free to Shoppers at adjecent shop</label><br>
+                    <input type="checkbox" id="parkingMeters" name="typeOfCarPark" value="Parking Meters">
+                    <label for="parkingMeters">Parking Meters</label><br>
+                    <input type="checkbox" id="permitHolders" name="typeOfCarPark" value="Permit Holders Only">
+                    <label for="permitHolders">Permit Holders Only</label><br>
+                    <input type="checkbox" id="reservedOnly" name="typeOfCarPark" value="Reserved Only">
+                    <label for="reservedOnly">Reserved Only</label><br>
+                    <input type="checkbox" id="unlimitedUse" name="typeOfCarPark" value="Unlimited Use">
+                    <label for="unlimitedUse">Unlimited Use</label><br>
+
+                    <input type="submit" class="input" value="Apply filters">
+                </form>
             </nav>
             <article>
                 <h2>Filter or search for car parks</h2>

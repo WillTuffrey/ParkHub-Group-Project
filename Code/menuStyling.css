@@ -235,3 +235,11 @@ button.radioButton {
         border: 1px solid rgb(204, 204, 204);  
     }
 }
+
+
+.input {
+    border: 1px solid #00012b;
+    border-radius: 4px;
+    background-color: rgb(79, 111, 255);
+    color: #c0e3ff;
+}
