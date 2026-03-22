@@ -30,10 +30,11 @@
     <body>
         <section>
             <nav>
-                <form> <!-- Work out where it goes later -->
+                <!-- <h2>Choose options from below and apply filters</h2> -->
+                <form action="/action_page.php"> <!-- Work out where it goes later -->
                     <p><b>CCTV</b></p>
-                    <input type="radio" id="" name="" value="">
-                    <label for="">All</label><br>
+                    <input type="radio" checked="true" id="cctvAll" name="cctv" value="">
+                    <label for="cctvAll">All</label><br>
                     <input type="radio" id="cctvYes" name="cctv" value="yes">
                     <label for="cctvYes">Yes</label><br>
                     <input type="radio" id="cctvNo" name="cctv" value="no">
@@ -44,6 +45,8 @@
                     <label for="spaces0-10">{SLIDER FOR SPACES}</label><br>
 
                     <p><b>Operating times</b></p>
+                    <input type="checkbox" checked="true" id="" name="" value="">
+                    <label for="">All</label><br>
                     <input type="checkbox" id="24/7" name="operatingTimes" value="24hrs 7 day a week"> <!-- be aware there is a spelling mistake in the data -->
                     <label for="24/7">24/7</label><br>
                     <input type="checkbox" id="storeHours" name="operatingTimes" value="Store Hours">
@@ -56,6 +59,8 @@
                     <label for="0700-2100Mon-Sat">7:00 AM - 9:00 PM, Monday - Saturday</label><br>
 
                     <p><b>Area name</b></p>
+                    <input type="checkbox" checked="true" id="" name="" value="">
+                    <label for="">All</label><br>
                     <input type="checkbox" id="districtCarParks" name="areaName" value="District Car Parks">
                     <label for="districtCarParks">District Car Parks</label><br>
                     <input type="checkbox" id="centralArea" name="areaName" value="Central Area">
@@ -76,6 +81,8 @@
                     <label for="westend">Westend</label><br>
 
                     <p><b>Type of car park</b></p>
+                    <input type="checkbox" checked="true" id="" name="" value="">
+                    <label for="">All</label><br>
                     <input type="checkbox" id="free" name="typeOfCarPark" value="Free">
                     <label for="free">Free</label><br>
                     <input type="checkbox" id="payAndDisplay" name="typeOfCarPark" value="Pay and Display">
