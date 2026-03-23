@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div id="map" class="div1">
+                <div id="planMap" class="div1">
                     <script>
                         function outputMarkers(json) {
                             let f = json.features;
@@ -133,7 +133,7 @@
                         var urlParams = new URLSearchParams(location.search);
                         var lat = urlParams.get('lat') || 51.464792;
                         var lon = urlParams.get('lon') || -2.598659;
-                        var map = L.map('map').setView([lat,lon], 12);
+                        var map = L.map('planMap').setView([lat,lon], 12);
             
                         // attribution legally required by the OpenStreetMap license
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

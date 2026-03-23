@@ -32,6 +32,17 @@ button {
     width: 36px;
     height: 32px;
 }
+.locationButton {
+    background-color: rgb(79, 111, 255);
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 0.8%;
+    color: rgb(255, 255, 255);
+}
 img.dropdownMenuImage {
     max-width: 30px;
     max-height: 30px;
@@ -177,19 +188,7 @@ ul li a.active {
     background-color: green;
 }
 
-/* radio buttons */
-/* a.radioButton {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333333; 
-    border-radius: 50%;
-    margin-right: 10px;
-    position: relative;
-}
-a.radioButton:active {
-    /* if the default blue is changable, change to the 'page blue' colour
-} */
+
 ::-webkit-slider-runnable-track {
     height: 8px;
     cursor: pointer;
