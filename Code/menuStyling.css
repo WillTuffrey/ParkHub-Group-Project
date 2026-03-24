@@ -47,6 +47,18 @@ button {
     color: rgb(255, 255, 255);
     z-index: 2;
 }
+.markerButton {
+    background-color: rgb(223, 223, 223);
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+}
+.markerButton:hover {
+    background-color: rgb(194, 194, 194);
+}
 img.dropdownMenuImage {
     max-width: 30px;
     max-height: 30px;

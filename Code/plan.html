@@ -123,7 +123,7 @@
                                 let lon = f[i].geometry.x;
                                 let lat = f[i].geometry.y;
                                 let marker = L.marker([lat,lon]).addTo(map);
-                                marker.bindPopup(`<b>${a.NAME}</b><br><b>${a.SPACES}</b> available spaces,<br><b>${a.TYPE_DESCRIPTION}</b>`);
+                                marker.bindPopup(`<b>${a.NAME}</b><br><b>${a.SPACES}</b> available spaces,<br><b>${a.TYPE_DESCRIPTION}</b><br><button class="markerButton" onclick='GetMoreInformation()'>More information</button>`);
                             }
                         }
                         function mapQuery() {

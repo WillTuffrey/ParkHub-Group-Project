@@ -12,6 +12,9 @@ function toggleDropdown() {
     dropdownMenu.toggleAttribute("active");    
 }
 
+function GetMoreInformation() {
+    alert("Don't do that");
+}
 
 function outputTable(json) {
     let element = document.getElementById("results");
