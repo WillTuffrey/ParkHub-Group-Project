@@ -25,20 +25,18 @@
             </section>    
         </header>
     </head>
-    <body>        
+    <body>
         <section>
-            <nav class="exploreNav">
-                <p></p>
-            </nav>
+            <nav class="sandwichNav"></nav>
             <article>
-                <h2 class="centredText">Explore the different locations across Bristol respective to your location</h2>
-                
-                <div id="exploreMap" class="div1">
+                <h2 class="centredText">Explore the different locations across Bristol in respective to your location</h2>
+                <div id="exploreMap" class="div1">                    
                     <script>
+                        var userLocationAllowed = false;
                         var navigationPointer = L.icon({
-                            iconUrl: 'images/my_location_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png',
-                            iconSize: [40,40],
-                            iconAnchor: [20,20],
+                            iconUrl: 'images/waypoint_orange.png',
+                            iconSize: [26,46],
+                            iconAnchor: [13,20],
                             popupAnchor: [0,-25]
                         });
                         function getLocation(page) {
@@ -46,6 +44,7 @@
                                 navigator.geolocation.getCurrentPosition( // if location is allowed, get the lat and lon of the user
                                     loc => window.location.href=`${page}?lat=${loc.coords.latitude}&lon=${loc.coords.longitude}`,
                                     () => window.location.href=`${page}?lat=51.4647924&lon=-2.598659`)
+                                userLocationAllowed = true;
                             }
                             else { // positions centre if location is disallowed or not supported
                                 window.alert("Geolocation is not supported by this browser.");
@@ -71,21 +70,23 @@
                         var lon = urlParams.get('lon') || -2.598659;
                         var map = L.map('exploreMap').setView([lat,lon], 17);
 
-                        L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup(); // marker for user location
-            
+                        if (userLocationAllowed) { // remake to only show a marker when the location is being shared, otherwise it just shows the default location with no marker                            
+                            L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+                        }
+                        L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+
                         // attribution legally required by the OpenStreetMap license
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         }).addTo(map);
                         mapQuery();
                     </script>
+                    
                 </div>
-                <button type="button" class="locationButton" onclick="getLocation('explore.html')">If your location is not shown by default, click here!</button> <!-- fix location :( -->                
+                <button type="button" class="locationButton" onclick="getLocation('explore.html')">If your location is not shown by default, click here!</button>
             </article>            
-            <nav class="exploreNav">
-                <p></p>
-            </nav>            
-        </section>
+            <nav class="sandwichNav"></nav>
+        </section>        
     </body>
     <footer class="footer">
         <section class="footerSection">
@@ -94,5 +95,6 @@
                                                                                     <a href="https://github.com/aelbanna72" class="link2" title="Ahmed El-Banna's GitHub">Ahmed El-Banna</a></p>
                 <p class="centredText noPaddingMargin">Send <a href="feedback.html" class="link2">Feedback</a></p>
             </article>
+        </section>
     </footer>
 </html>

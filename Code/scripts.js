@@ -72,7 +72,7 @@ function like(type) {
     .then(outputTable);
 }
 
-/* 
+
 function outputMarkers(json) {
     let f = json.features;
     for(let i=0;i<f.length;i++) {
@@ -98,4 +98,3 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 mapQuery();
-*/

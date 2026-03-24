@@ -38,10 +38,14 @@ button {
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
-    width: auto;
+    width: auto;  
     height: auto;
     padding: 0.8%;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-bottom: 20px;
     color: rgb(255, 255, 255);
+    z-index: 2;
 }
 img.dropdownMenuImage {
     max-width: 30px;
