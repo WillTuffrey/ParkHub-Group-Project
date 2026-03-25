@@ -33,11 +33,23 @@
                 <div id="exploreMap" class="div1">                    
                     <script>
                         var userLocationAllowed = false;
-                        var navigationPointer = L.icon({
-                            iconUrl: 'images/waypoint_orange.png',
+                        var userLocationMarker = L.icon({               // Fix to make the point of the marker hit the exact location of where its pointed (user and car parks)
+                            iconUrl: 'images/marker_orange.png',
+                            shadowUrl: 'images/marker_shadow.png',
                             iconSize: [26,46],
-                            iconAnchor: [13,20],
-                            popupAnchor: [0,-25]
+                            iconAnchor: [13,46],
+                            popupAnchor: [0,-48],                            
+                            shadowSize: [40, 60],
+                            shadowAnchor: [19.5, 56]
+                        });
+                        var carParkLocationMarker = L.icon({
+                            iconUrl: 'images/marker_blue.png',
+                            shadowUrl: 'images/marker_shadow.png',
+                            iconSize: [26,46],
+                            iconAnchor: [13,46],
+                            popupAnchor: [0,-48],                            
+                            shadowSize: [40, 60],
+                            shadowAnchor: [19.5, 56]
                         });
                         function getLocation(page) {
                             if (navigator.geolocation) {
@@ -57,7 +69,7 @@
                                 let a = f[i].attributes;
                                 let lon = f[i].geometry.x;
                                 let lat = f[i].geometry.y;
-                                let marker = L.marker([lat,lon]).addTo(map);
+                                let marker = L.marker([lat,lon], {icon: carParkLocationMarker}).addTo(map);
                                 marker.bindPopup(`<b>${a.NAME}</b><br><b>${a.SPACES}</b> available spaces,<br><b>${a.TYPE_DESCRIPTION}</b><br><button class='markerButton' onclick="GetMoreInformation()">More information</button>`);
                             }
                         }
@@ -70,10 +82,10 @@
                         var lon = urlParams.get('lon') || -2.598659;
                         var map = L.map('exploreMap').setView([lat,lon], 17);
 
-                        if (userLocationAllowed) { // remake to only show a marker when the location is being shared, otherwise it just shows the default location with no marker                            
-                            L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
-                        }
-                        L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+                        //if (userLocationAllowed) { // remake to only show a marker when the location is being shared, otherwise it just shows the default location with no marker                            
+                        //    L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+                        //}
+                        L.marker([lat, lon], {icon: userLocationMarker, zIndexOffset: 1000}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
 
                         // attribution legally required by the OpenStreetMap license
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
