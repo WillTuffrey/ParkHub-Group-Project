@@ -116,13 +116,31 @@
 
                 <div id="planMap" class="div1">
                     <script>
+                        var userLocationMarker = L.icon({               // Fix to make the point of the marker hit the exact location of where its pointed (user and car parks)
+                            iconUrl: 'images/marker_orange.png',
+                            shadowUrl: 'images/marker_shadow.png',
+                            iconSize: [26,46],
+                            iconAnchor: [13,46],
+                            popupAnchor: [0,-48],                            
+                            shadowSize: [40, 60],
+                            shadowAnchor: [19.5, 56]
+                        });
+                        var carParkLocationMarker = L.icon({
+                            iconUrl: 'images/marker_blue.png',
+                            shadowUrl: 'images/marker_shadow.png',
+                            iconSize: [26,46],
+                            iconAnchor: [13,46],
+                            popupAnchor: [0,-48],                            
+                            shadowSize: [40, 60],
+                            shadowAnchor: [19.5, 56]
+                        });
                         function outputMarkers(json) {
                             let f = json.features;
                             for(let i=0;i<f.length;i++) {
                                 let a = f[i].attributes;
                                 let lon = f[i].geometry.x;
                                 let lat = f[i].geometry.y;
-                                let marker = L.marker([lat,lon]).addTo(map);
+                                let marker = L.marker([lat,lon], {icon: carParkLocationMarker}).addTo(map);
                                 marker.bindPopup(`<b>${a.NAME}</b><br><b>${a.SPACES}</b> available spaces,<br><b>${a.TYPE_DESCRIPTION}</b><br><button class="markerButton" onclick='GetMoreInformation()'>More information</button>`);
                             }
                         }

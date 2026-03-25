@@ -32,8 +32,9 @@
                 <h2 class="centredText">Explore the different locations across Bristol in respective to your location</h2>
                 <div id="exploreMap" class="div1">                    
                     <script>
-                        var userLocationAllowed = false;
-                        var userLocationMarker = L.icon({               // Fix to make the point of the marker hit the exact location of where its pointed (user and car parks)
+                        var userLayer = L.layerGroup();
+                        var carParkLayer = L.layerGroup();
+                        var userLocationMarker = L.icon({
                             iconUrl: 'images/marker_orange.png',
                             shadowUrl: 'images/marker_shadow.png',
                             iconSize: [26,46],
@@ -55,12 +56,18 @@
                             if (navigator.geolocation) {
                                 navigator.geolocation.getCurrentPosition( // if location is allowed, get the lat and lon of the user
                                     loc => window.location.href=`${page}?lat=${loc.coords.latitude}&lon=${loc.coords.longitude}`,
-                                    () => window.location.href=`${page}?lat=51.4647924&lon=-2.598659`)
-                                userLocationAllowed = true;
+                                    () => window.location.href=`${page}?lat=51.4647924&lon=-2.598659`);
+                                let marker = L.marker([lat, lon], {icon: userLocationMarker, zIndexOffset: 1000});
+                                marker.bindPopup("<b>Your location</b>");
+                                marker.addTo(userLayer);
+                                page.addLayer(userLayer);
+                                return true;
                             }
                             else { // positions centre if location is disallowed or not supported
                                 window.alert("Geolocation is not supported by this browser.");
                                 window.location.href=`${page}?lat=51.4647924&lon=-2.598659`;
+                                page.removeLayer(userLayer);
+                                return false;
                             }
                         }                        
                         function outputMarkers(json) {
@@ -70,7 +77,12 @@
                                 let lon = f[i].geometry.x;
                                 let lat = f[i].geometry.y;
                                 let marker = L.marker([lat,lon], {icon: carParkLocationMarker}).addTo(map);
-                                marker.bindPopup(`<b>${a.NAME}</b><br><b>${a.SPACES}</b> available spaces,<br><b>${a.TYPE_DESCRIPTION}</b><br><button class='markerButton' onclick="GetMoreInformation()">More information</button>`);
+                                marker.bindPopup(`<b>${a.NAME}</b><br>
+                                                    <b>${a.SPACES}</b> available spaces,<br>
+                                                    <b>${a.TYPE_DESCRIPTION}</b><br>
+                                                    <button class='markerButton' onclick="GetMoreInformation()">More information</button><br>
+                                                    <button class="markerButton" onclick='OpenInPlan()'>Open in plan?</button>`);
+                                marker.addTo(carParkLayer);
                             }
                         }
                         function mapQuery() {
@@ -82,18 +94,27 @@
                         var lon = urlParams.get('lon') || -2.598659;
                         var map = L.map('exploreMap').setView([lat,lon], 17);
 
-                        //if (userLocationAllowed) { // remake to only show a marker when the location is being shared, otherwise it just shows the default location with no marker                            
+                        //if (userLocationAllowed) { // remake to only show a marker when the location is being shared, otherwise it just shows the default location with no marker
                         //    L.marker([lat, lon], {icon: navigationPointer}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
                         //}
-                        L.marker([lat, lon], {icon: userLocationMarker, zIndexOffset: 1000}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+                        function HasUserLocation(userLocationAllowed) {
+                            if (userLocationAllowed) {                                
+                                L.marker([lat, lon], {icon: userLocationMarker, zIndexOffset: 1000}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+                            }
+                            else{
+                                L.marker([lat, lon], {icon: userLocationMarker, zIndexOffset: 1000}).removeFrom(map);
+                            }                            
+                        }
+                        //HasUserLocation(getLocation('explore.html'));
 
+                        L.marker([lat, lon], {icon: userLocationMarker, zIndexOffset: 1000}).addTo(map).bindPopup("<b>Your location</b>").openPopup();
+                        
                         // attribution legally required by the OpenStreetMap license
                         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         }).addTo(map);
-                        mapQuery();
+                        mapQuery();                        
                     </script>
-                    
                 </div>
                 <button type="button" class="locationButton" onclick="getLocation('explore.html')">If your location is not shown by default, click here!</button>
             </article>            
