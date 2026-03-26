@@ -148,3 +148,58 @@ a.link2:active {text-decoration: none; color: #ffff00;}
     margin-right: 50px;
     z-index: 1;
 }
+
+.sideMenu {
+    width: 262px;
+    height: auto;
+    background: rgb(0, 0, 0);
+    border-radius: 6px;
+    border: solid rgb(189, 189, 189);
+    border-width: 1px;
+    position: absolute;
+    top: 175%;
+    left: -0.5%;
+    transform: translate(-50%, -50%)   scale(0, 1);
+    text-align: left;
+    padding: 0 0 25px 0;
+    color: rgb(255, 255, 255);
+    visibility: visible;
+    transition: transform 0.2s, top 0.2s;
+    z-index: 10;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.open-sideMenu {
+    visibility: visible;
+    transform: translate(0, -50%)  scale(1);
+}
+.sideMenuButton {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin: 0 56px 0 56px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.sideMenuButton:hover {
+    background: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+}
+.sideMenu img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.sideMenu h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}

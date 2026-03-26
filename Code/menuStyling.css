@@ -60,6 +60,19 @@ button {
 .markerButton:hover {
     background-color: rgb(194, 194, 194);
 }
+.btn {
+    Padding: 10px;
+    background: rgb(160, 43, 43);
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+}
+
 img.dropdownMenuImage {
     max-width: 30px;
     max-height: 30px;
