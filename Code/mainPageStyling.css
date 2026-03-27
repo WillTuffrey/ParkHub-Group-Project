@@ -152,12 +152,13 @@ a.link2:active {text-decoration: none; color: #ffff00;}
 .sideMenu {
     width: 262px;
     height: auto;
+    min-height: 350px;
     background: rgb(0, 0, 0);
     border-radius: 6px;
     border: solid rgb(189, 189, 189);
     border-width: 1px;
     position: absolute;
-    top: 175%;
+    top: 220%;
     left: -0.5%;
     transform: translate(-50%, -50%)   scale(0, 1);
     text-align: left;

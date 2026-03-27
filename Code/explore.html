@@ -17,12 +17,30 @@
         <header class="sticky">
             <section class="headerSection">
                 <div>
-                    <button type="button", onclick='toggleDropdown()' class="dropdownButton"><img class="dropdownMenuImage", src="images/3linesHorrizontal.png", alt="Dropdown Button"></button>
+                    <button type="submit", onclick='openSideMenu()' class="dropdownButton"><img class="dropdownMenuImage", src="images/3linesHorrizontal.png", alt="Dropdown Button"></button>
                 </div>
-                
+                <div class="sideMenu" id="sideMenu">
+                    <h2 class="centredText">Explore</h2>
+                    <form action="home.html">
+                        <input type="submit" class="sideMenuButton" value="Home" />
+                    </form>
+                    <form action="plan.html">
+                        <input type="submit" class="sideMenuButton" value="Plan" />
+                    </form>
+                    <input type="submit" class="sideMenuButton"  value="Close" onclick="closeSideMenu()" />
+                    <script>
+                        let sideMenu = document.getElementById("sideMenu");
+                        function openSideMenu() {
+                            sideMenu.classList.add("open-sideMenu");
+                        }
+                        function closeSideMenu() {
+                            sideMenu.classList.remove("open-sideMenu");
+                        } 
+                    </script>
+                </div>
                 <article class="headerArticle">
                     <h1>Parkhub — Explore</h1>
-                </article>                                             
+                </article>                
             </section>    
         </header>
     </head>

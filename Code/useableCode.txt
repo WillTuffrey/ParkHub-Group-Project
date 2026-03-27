@@ -116,3 +116,14 @@ Old footer: (rip)
             </article>
         </section>
     </footer>
+
+
+Old useage for pop-out
+    <div class="sideMenu" id="sideMenu">
+                        <!-- <img src="images/marker_orange.png" alt="marker">  -->
+                        <h2 class="centredText">Feedback</h2>
+                        <a href="home.html" class="sideMenuButton">Home</a>
+                        <button type="button" class="sideMenuButton" href="plan.html">Plan</button>
+                        <button type="button" class="sideMenuButton" href="explore.html">Explore</button>
+                        <button type="button" class="sideMenuButton" onclick="closeSideMenu()">Close</button> <!-- A dropdown could and probably should be used here -->
+                    </div>
