@@ -16,17 +16,27 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 input[type="checkbox"]:hover {
-    outline: 1px solid rgb(79, 111, 255);
+    /*outline: 1px solid rgb(79, 111, 255);*/
+    background: rgb(79, 111, 255);
 }
+input[type="range"] {
+    width: 200px;
+    height: 15px;
+    margin-right: 10px;
+    background: rgb(160, 43, 43);
+    outline: 1px solid rgb(0, 0, 0);
+    
+}
+
 input:checked {
     accent-color: rgb(79, 111, 255);
 }
 
 button {
-    border: 1px;
     background-color: transparent;
-    width: 25px;
-    height: 25px;
+    border: 1px;
+    /*width: 25px;
+    height: 25px;*/
 }
 .searchButton {
     width: 36px;
@@ -119,6 +129,10 @@ img.dropdownMenuImage {
 @keyframes fadeIn {
     from { background-color: transparent; }
     to { background-color: rgb(95, 95, 95); }
+}
+@keyframes fadeIn2 {
+    from { background-color: transparent; }
+    to { background-color: rgb(53, 53, 53); }
 }
 @keyframes rotateButton {
     from { transform: rotate(0deg); }
@@ -224,39 +238,25 @@ ul li a.active {
     cursor: pointer;
     border-radius: 4px;
 }
-button.radioButton {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333333; 
-    border-radius: 1px;
-    position: relative;
-}
-
-
-
-
-
-
 
 /* test for search bar */
-.topnav {
+.searchTop {
     overflow: hidden;
     background-color: rgb(233, 233, 233);
 }
 
-.topnav .search-container {
+.searchTop .search-container {
     float: left;
 }
 
-.topnav input[type=text] {
+.searchTop input[type=text] {
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
 }
 
-.topnav .search-container button {
+.searchTop .search-container button {
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
@@ -267,15 +267,15 @@ button.radioButton {
     cursor: pointer;
 }
 
-.topnav .search-container button:hover {
+.searchTop .search-container button:hover {
     background: rgb(204, 204, 204);
 }
 
 @media screen and (max-width: 600px) {
-    .topnav .search-container {
+    .searchTop .search-container {
         float: none;
     }
-    .topnav a, .topnav input[type=text], .topnav .search-container button {
+    .searchTop a, .searchTop input[type=text], .searchTop .search-container button {
         float: none;
         display: block;
         text-align: left;
@@ -283,7 +283,7 @@ button.radioButton {
         margin: 0;
         padding: 14px;
     }
-    .topnav input[type=text] {
+    .searchTop input[type=text] {
         border: 1px solid rgb(204, 204, 204);  
     }
 }
@@ -294,4 +294,97 @@ button.radioButton {
     border-radius: 4px;
     background-color: rgb(79, 111, 255);
     color: #c0e3ff;
+}
+
+.sideMenu {
+    width: 262px;
+    height: auto;
+    min-height: 350px;
+    background: rgb(0, 0, 0);
+    border-radius: 6px;
+    border: solid rgb(189, 189, 189);
+    border-width: 1px;
+    position: absolute;
+    top: 220%;
+    left: -0.5%;
+    transform: translate(-50%, -50%)   scale(0, 1);
+    text-align: left;
+    padding: 0 0 25px 0;
+    color: rgb(255, 255, 255);
+    visibility: visible;
+    transition: transform 0.2s, top 0.2s;
+    z-index: 10;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.open-sideMenu {
+    visibility: visible;
+    transform: translate(0, -50%)  scale(1);
+}
+.sideMenuButton {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    margin: 0 56px 0 56px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.sideMenuButton:hover {
+    background: rgb(53, 53, 53);
+    /*background: transparent;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;*/
+    color: rgb(255, 255, 255);
+}
+.sideMenu h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+
+/* Styles for filter slider - taken from pcpartpicker */
+.divForSlider {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    color: #191b2a;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    position: absolute;
+    height: 3px;
+    top: 0;
+    background-color: #2c87c3;
+    left: 0%;
+    width: 100%;
+}
+span {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    color: #191b2a;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    margin-left: -8px;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    top: -6px;
+    background-color: #2c87c3;
+    left: 0%;
 }

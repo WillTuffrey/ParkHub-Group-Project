@@ -48,19 +48,24 @@
     <body>
         <section>
             <nav>
-                <!-- <h2>Choose options from below and apply filters</h2> -->
-                <form action="/action_page.php"> <!-- Work out where it goes later -->
+                <form action="filter.php" method="post"> <!-- Work out how to make filter.php recieve the information -->
                     <p><b>CCTV</b></p>
                     <input type="radio" checked="true" id="cctvAll" name="cctv" value="">
                     <label for="cctvAll">All</label><br>
-                    <input type="radio" id="cctvYes" name="cctv" value="yes">
+                    <input type="radio" id="cctvYes" name="cctv" value="Yes">
                     <label for="cctvYes">Yes</label><br>
-                    <input type="radio" id="cctvNo" name="cctv" value="no">
+                    <input type="radio" id="cctvNo" name="cctv" value="No">
                     <label for="cctvNo">No</label><br>
 
                     <p><b>Spaces</b></p>
-                    <input type="checkbox" id="spaces0-10" name="spaces" value="0-10">
-                    <label for="spaces0-10">{SLIDER FOR SPACES}</label><br>
+                    <input type="range" id="spaces" min="9" max="500" name="spaces" right="100%"> <!-- 500 should be 500+, spaces range from 9-2540 -->
+                    <label for="spaces">Range</label>                    
+
+                    <!-- <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;">
+                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span>
+                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+                    </div> lines and style taken from filter sliders in pcpartpicker, probably wont use -->
+
 
                     <p><b>Operating times</b></p>
                     <input type="checkbox" checked="true" id="" name="" value="">
@@ -123,7 +128,7 @@
             </nav>
             <article>
                 <h2>Filter or search for car parks</h2>
-                <div class="topnav">
+                <div class="searchTop">
                     <div class="search-container">
                         <form action="/action_page.php">
                         <input type="text" placeholder="Search.." name="search">
@@ -134,7 +139,7 @@
 
                 <div id="planMap" class="div1">
                     <script>
-                        var userLocationMarker = L.icon({               // Fix to make the point of the marker hit the exact location of where its pointed (user and car parks)
+                        var userLocationMarker = L.icon({
                             iconUrl: 'images/marker_orange.png',
                             shadowUrl: 'images/marker_shadow.png',
                             iconSize: [26,46],
@@ -184,9 +189,9 @@
     <footer class="footer">
         <section class="footerSection">
             <article>
-                <p class="centredText noPaddingMargin">Page designed and produced by <a href="https://github.com/WillTuffrey" class="link2" title="Will Tuffrey's GitHub">Will Tuffrey</a> and 
-                                                                                    <a href="https://github.com/aelbanna72" class="link2" title="Ahmed El-Banna's GitHub">Ahmed El-Banna</a></p>
-                <p class="centredText noPaddingMargin">Send <a href="feedback.html" class="link2" title="Send feedback">Feedback</a></p>
+                <p class="centredText noPaddingMargin">Page designed and produced by <a href="https://github.com/WillTuffrey" class="link1" title="Will Tuffrey's GitHub">Will Tuffrey</a> and 
+                                                                                    <a href="https://github.com/aelbanna72" class="link1" title="Ahmed El-Banna's GitHub">Ahmed El-Banna</a></p>
+                <p class="centredText noPaddingMargin">Send <a href="feedback.html" class="link1" title="Send feedback">Feedback</a></p>
             </article>
         </section>
     </footer>
