@@ -9,3 +9,9 @@ https://opendata.bristol.gov.uk/datasets/bcc::car-parks/about
 3. [Design](https://github.com/WillTuffrey/ParkHub-Group-Project/blob/main/Documentation%20Files/Documentation/design.md)
 4. [Implementation](https://github.com/WillTuffrey/ParkHub-Group-Project/blob/main/Documentation%20Files/Documentation/implementation.md)
 5. [Testing](https://github.com/WillTuffrey/ParkHub-Group-Project/blob/main/Documentation%20Files/Documentation/testing.md)
+
+Many thanks to the following:
+* Lennart Schmelzer-Ziringer for the custom OpenStreetMap markers
+* Maintainers of LeafletJS
+* Contributers of OpenStreetMap
+* Contributers of Open Data Bristol
