@@ -10,3 +10,8 @@ https://opendata.bristol.gov.uk/datasets/bcc::car-parks/about
 4. [Implementation](Documentation/implementation.md)
 5. [Testing](Documentation/testing.md)
 
+Many thanks to the following:
+* Lennart Schmelzer-Ziringer for the custom OpenStreetMap markers
+* Maintainers of LeafletJS
+* Contributers of OpenStreetMap
+* Contributers of Open Data Bristol
