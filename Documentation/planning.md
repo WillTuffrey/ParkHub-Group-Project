@@ -38,4 +38,4 @@ Costs:
 
 
 ## Context diagram
-![Insert your Context Diagram Here](images/ContextDiagram.png)
+![Insert your Context Diagram Here](images/contextDiagram.png)
