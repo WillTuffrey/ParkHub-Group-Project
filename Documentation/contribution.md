@@ -9,3 +9,12 @@ Added Use-case UC2
 
 Updated User stories and Actors
 Added Use-case UC1
+
+
+| Contribution | Contributer |
+|--------------|-------------|
+| **Design** <br> • Wireframe diagram<br> • Descriptive paragraphs | <br> • Ahmen <br> • Ahmed |
+| **Implementation** <br> • Project structure <br> • UML diagram <br> • Component diagram <br> • Written section | <br> • <br> • <br> • <br> •  |
+| **Planning** <br> • Problem statement <br> • Business benefits <br> • Options considered <br> • Estimated risks <br> • Project scope <br> • Context diagram | <br> • <br> • <br> • <br> • <br> • <br> • |
+| **Requirements** <br> • | <br> • |
+| **Testing** <br> • | <br> • |
