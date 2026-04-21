@@ -38,23 +38,36 @@
         </header>
     </head>
     <body>        
-        <section>            
-            <nav></nav>
+        <section class="homeSection">
+            <style>
+                body {
+                    height: auto;
+                }
+                nav.homeNav {
+                    background-color: rgb(43, 42, 65);
+                    overflow-y: hidden;
+                }
+                section.homeSection {
+                    background-color: rgb(83, 81, 122);
+                }
+                h2 {
+                    color: white;
+                }
+                p {
+                    color: rgb(255, 255, 255);
+                }
+            </style>
+            <nav class="homeNav"></nav>
             <article>
-                <h2>Page title/introdutory</h2>
-                <p>Page content</p>
-                <table>
-                    <thead>
-                        <th>Name</th><th>Area Name</th><th>Operator Name</th><th>Spaces</th><th>Operating Times</th>
-                    </thead>
-                    <tbody id="results">
-                    </tbody>
-                </table>
-                <script>
-                    query();
-                </script>
+                <h2 class="centredText">Welcome to ParkHub!</h2>
+                <p class="centredText">ParkHub is a webapp designed to find by filtering avaliable car parks in the Bristol area</p>                
+                <img src="images/carParkInfo.png" alt="Parking info image" class="homeImages">
+                <img src="images/userLocation.png" alt="User location image" class="homeImages">
+                <p style="padding-left: 50px;">In the map in <a href="explore.html" class="link3">Explore</a> and <a href="plan.html" class="link3">Plan</a>, you can view the avaliable information about each car park. You can also see your location in relation to car parks around you!</p>
+                <img src="images/carParks.png" alt="Car parks image" class="homeImages">
+                <p style="padding-left: 50px;">Zoom in and out and browse the city for ideal parking for you!</p>
             </article>
-            <nav class="sandwichNav"></nav>
+            <nav class="homeNav"></nav>
         </section>
     </body>    
     <footer class="footer">

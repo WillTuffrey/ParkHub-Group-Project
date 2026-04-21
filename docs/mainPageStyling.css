@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh; 
     background-attachment: fixed;
 }
 footer {    
@@ -114,6 +114,13 @@ tbody {
 th {
     max-width: 200px;
 }
+img.homeImages {
+    width: auto;
+    height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
 
 .sticky {position: sticky; top: 0;}
 .centredText {text-align: center;}
@@ -131,6 +138,12 @@ a.link2:link  {text-decoration: none; color: rgb(255, 255, 255);}
 a.link2:visited {text-decoration: none; color: rgb(255, 255, 255);}
 a.link2:hover {text-decoration: underline; color: rgb(255, 255, 0);}
 a.link2:active {text-decoration: none; color: rgb(255, 255, 0);}
+
+a.link3 {color: rgb(255, 136, 0);}
+a.link3:link  {text-decoration: none; color: rgb(255, 136, 0);}
+a.link3:visited {text-decoration: none; color: rgb(255, 136, 0);}
+a.link3:hover {text-decoration: underline; color: rgb(255, 255, 0);}
+a.link3:active {text-decoration: none; color: rgb(255, 255, 0);}
 
 #planMap { 
     position: relative;
