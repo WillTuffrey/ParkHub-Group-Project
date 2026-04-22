@@ -15,7 +15,7 @@ There were a few data points that weren’t useful to have in our program becaus
 ## Bristol Open Data API
 
 
-![My image](Documentation/images/Data%20API.png)
+![My image](./images/Data%20API.png)
 
 
 # User guide
