@@ -27,7 +27,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ![My image](./images/plan%20page.png)
 
-![My image](./images/menu%20page%20in%20home%20%20.png)
+![My image](./images/menu%20page%20in%20home.png)
 
 ![My image](./images/menu%20page%20in%20explore.png)
 
