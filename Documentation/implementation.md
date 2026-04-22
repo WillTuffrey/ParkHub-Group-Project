@@ -10,7 +10,7 @@ There were a few data points that weren’t useful to have in our program becaus
 ## Software Architecture
 
 
-![My image](Documentation/images/Software%20Architecture.png)
+![My image](./images/Software%20Architecture.png)
 
 ## Bristol Open Data API
 
