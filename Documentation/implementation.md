@@ -10,12 +10,12 @@ There were a few data points that weren’t useful to have in our program becaus
 ## Software Architecture
 
 
-![My image](images/Software Architecture.png)
+![Wireframe Diagram](images/Software Architecture.png)
 
 ## Bristol Open Data API
 
 
-![My image](images/Data API.png)
+![Wireframe Diagram](images/Data API.png)
 
 
 # User guide
