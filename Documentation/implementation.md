@@ -8,15 +8,15 @@ The most challenging part we faced was the filtering feature. We needed to make 
 There were a few data points that weren’t useful to have in our program because they would overcomplicate the program for the user, as well as data that not a lot of people would use, like Easting, Northing, Occupancy and Trend, just to name a few data points. 
 
 ## Software Architecture
-TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
-![Insert your component Diagram here](images/component.png)
+
+(images/Software Architecture.png)
 
 ## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
 
-![UML Class diagrams representing JSON query results](images/class1.png)
-TODO: Repeat as necessary
+
+(images/Data API.png)
+
 
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
