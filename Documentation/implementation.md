@@ -21,6 +21,18 @@ There were a few data points that weren’t useful to have in our program becaus
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
 
+![My image](./images/home%20page.png)
+
+![My image](./images/explore%20page.png)
+
+![My image](./images/plan%20page.png)
+
+![My image](./images/menu%20page%20in%20home.png)
+
+![My image](./images/menu%20page%20in%20explore.png)
+
+![My image](./images/menu%20page%20in%20plan.png)
+
 ## Project Structure
 ```
 └── 📁ParkHub-Group-Project
