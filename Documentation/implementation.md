@@ -1,7 +1,12 @@
 # Implementation
 
 ## Introduction
-TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
+The dataset we’re using is the car parking dataset from Bristol Open Data. We were able to implement the data into a map that where it shows the different locations of car parks in Bristol. 
+
+The most challenging part we faced was the filtering feature. We needed to make sure that the data set was aligned so that we could actually use the filtering feature. It is a very important feature because it is the main feature we wanted. 
+
+There were a few data points that weren’t useful to have in our program because they would overcomplicate the program for the user, as well as data that not a lot of people would use, like Easting, Northing, Occupancy and Trend, just to name a few data points. 
+
 
 ## Project Structure
 ```
@@ -86,6 +91,8 @@ TODO: Describe the system implemented (Describe the dataset. Are there any known
         ├── readme.md
     ├── .gitattributes
     └── README.md
+
+
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
