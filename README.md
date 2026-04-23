@@ -17,4 +17,6 @@ Many thanks to the following:
 * Contributers of OpenStreetMap
 * Contributers of Open Data Bristol
 
-Notes: for some reason which I cannot figure out, the deployment won't update from an old version.
+Notes: for some reason which I cannot figure out, the deployment won't update from an old version. If you wish to view the acurate home page, apologies but you will have to download the index.html file and run it yourself.
+
+Project by Will Tuffrey and Ahmed El-Banna
