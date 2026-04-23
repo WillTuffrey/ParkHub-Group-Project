@@ -7,6 +7,11 @@ The most challenging part we faced was the filtering feature. We needed to make 
 
 There were a few data points that weren’t useful to have in our program because they would overcomplicate the program for the user, as well as data that not a lot of people would use, like Easting, Northing, Occupancy and Trend, just to name a few data points. 
 
+| Render | Icon |
+|--------------|-------------|
+| Location of Car Parks | ![My image](./images/Car%20parking%20location.png) |
+| User Location | ![My image](./images/user%20location%20pin.png) |
+
 
 ## Software Architecture
 
