@@ -23,9 +23,6 @@
 
 
 ### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
 
 | USE-CASE UC1 | USE-CASE Describtion | 
 | -------------------------------------- | ------------------- |
@@ -50,8 +47,8 @@ TODO: Describe each use case (at least one per team member).
 | **Non-functional** | • Easy to use GUI <br> • Intuitive filtering options <br> • A well-integrated maps function |
 | **Issues** | N/A |
 
-**UML-**
-
+**UML-2**
+![UML-2](images/Use-case-disgram-2.png)
 
 | USE-CASE UC3 | USE-CASE Description |
 | -------------------------------------- | ------------------- |
@@ -63,8 +60,7 @@ TODO: Describe each use case (at least one per team member).
 | **Non-functional** | There needs to be an easy process for the user to access and submit feedback and report problems to the administrator |
 | **Issues** | There would either need to be a way to notify the administrator of new feedback, or the administrator would have to regularly check for new feedback manually |
 
-**UML-2**
-![UML-2](images/Use-case-disgram-2.png)
+**UML-3**
 
 
 
@@ -72,27 +68,17 @@ TODO: Describe each use case (at least one per team member).
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
 
-* FR1: Display filters for the user to select or deselect - from use-case 1
-* FR2: Use the filters to find and show (a) car park(s) matching all requirements - from use-case 1
-* FR3: Use an algorithm to calculate the closest car park to the location selected - from use-case 1
-* FR4: Have a feedback ticket system to allow users to report issues with the program or data - from use-case 2
-* FR5: Integrate a map system like Google Maps to display locations for the user to see
+* FR1: Display filters for the user to select or deselect - from UC1
+* FR2: Use the filters to find and show (a) car park(s) matching all requirements - from UC1
+* FR3: Use an algorithm to calculate the closest car park to the location selected - from UC1
+* FR4: Have a feedback ticket system to allow users to report issues with the program or data - from UC2
+* FR5: Integrate a map system like Google Maps to display locations for the user to see - from UC1
 
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
-* NFR1: It will show up to 5 different car parks near the user on one page. (usability)
-* NFR2: The website should work on a phone in both Android and IOS. (Portability)
-* NFR3: It will assume the default on the browser if there's no user geolocation. (reliability)
-* NFR4: On the map, it will have a radius that'll show car parks around the user. (usability)
-
-
-
-Indicate which UC the requirement comes from.
+* NFR1: It will show up to 5 different car parks near the user on one page. (usability) - from UC1
+* NFR2: The website should work on a phone in both Android and IOS. (Portability) - from UC1 + UC2
+* NFR3: It will assume the default on the browser if there's no user geolocation. (reliability) - from UC1
+* NFR4: On the map, it will have a radius that'll show car parks around the user. (usability) - from UC1
