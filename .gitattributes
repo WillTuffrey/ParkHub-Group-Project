@@ -1,13 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-
-*.es linguist-language=js
-*.es linguist-language=JS
-*.es linguist-language=JAVASCRIPT
-
-
-*.es linguist-language=html
-*.es linguist-language=HTML
-
-*.es linguist-language=css
-*.es linguist-language=CSS
+docs/**/*.html linguist-documentation=false linguist-language=HTML
+docs/**/*.css linguist-documentation=false linguist-language=CSS
+docs/**/*.js linguist-documentation=false linguist-language=JavaScript
