@@ -17,6 +17,6 @@ Many thanks to the following:
 * Contributers of OpenStreetMap
 * Contributers of Open Data Bristol
 
-Notes: the deployment does now work with the up to date index.html file
+The code for the site is stored in the "docs" file to work properly with GitHub Deployments.
 
-Project by Will Tuffrey and Ahmed El-Banna
+Project by [Will Tuffrey](https://github.com/WillTuffrey) and [Ahmed El-Banna](https://github.com/aelbanna72)
